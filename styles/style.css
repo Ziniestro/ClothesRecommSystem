@@ -1,0 +1,264 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(56, 112, 103);
+    position: fixed;
+    z-index: 1;
+}
+
+nav .section-up {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav .section-up .logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .section-up .logo h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+nav .section-up .searching {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+
+nav .section-up .searching #inputSearching {
+    width: 350px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    font-size: 90%;
+}
+
+nav .section-down {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav .section-down #section-down-hidden{
+    width: 20%;
+    height: 100%;
+}
+
+nav .section-down .navigation-list {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+nav .section-down .navigation-list li {
+    width: 25%;
+    height: 100%;
+}
+
+nav .section-down .navigation-list li a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+nav .section-down .navigation-list li a:hover {
+    background-color: rgb(110, 150, 144);
+}
+
+
+nav .section-down .account-list {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+nav .section-down .account-list li {
+    width: 33%;
+    height: 100%;
+}
+
+nav .section-down .account-list li a  {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+nav .section-down .account-list li a:hover {
+    background-color: rgb(110, 150, 144);
+
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    background-color: gray;
+    top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main .aside {
+    width: 20%;
+    background-color: transparent;
+    height: 900px;
+    position: fixed;
+    padding: 20px;
+
+}
+
+.main .aside .ad {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.main .aside .ad .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(Imagenes/buenfin.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+}
+
+
+.main .aside .categories {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.main .aside .categories h2 {
+    width: 100%;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 139, 86);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main .aside .categories ul {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main .aside .categories a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(6, 107, 77);
+}
+
+
+.main .show-elements {
+    width: 80%;
+    background-color: white;
+    right: 0px;
+    position: absolute;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.main .show-elements .element-from-database {
+    width: 240px;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid rgb(6, 107, 77);
+    text-align: center;
+    margin: 10px;
+}
+
+.main .show-elements .element-from-database img {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+}
+
+.main .show-elements .element-from-database .data-showed {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(5, 88, 75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-align: justify;
+}
+
+
+.main .show-elements .element-from-database .data-showed div h3, h4, h5 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+
+.main .footer {
+    width: 100%;
+    height: 30px;
+    background-color: #155f46;
+    position: absolute;
+    bottom: 0px;
+    z-index: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
